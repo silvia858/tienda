@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>quienes somos?</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">&nbsp;</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">inicio <span class="sr-only">(current)</span></a>
+             </li>
+			  <li class="nav-item active">
+                <a class="nav-link" href="login.html">inicia sesion <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="quienes_somos.html"> ¿Quienes Somos?&nbsp;</a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nuestros Productos&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="carta.html">nuestra carta</a>
+                   <a class="dropdown-item" href="servicios.html">servicios</a>
+                 
+                   <!--<a class="dropdown-item" href="#">carta de alergenos</a>-->
+                </div>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://sitioweb-1.company.site/">haz tu pedido ya!&nbsp;</a>
+             </li>
+		 </div>
+		 <br>
+		 <br>
+	</nav>
+	<div class="LOGIN" name="LOGIN">
+	<br>
+	<p>estas registrado? inicia sesion y asi será mucho más sencillo hacer tu pedido</p>
+		<br><br>
+<form action="login.php"  method="post"
+ enctype="multipart/form-data" id="lg">
+ <table width="40%" border="2" cellpadding="3" cellspacing="2" id="t1">
+  <tbody>
+    <tr>
+      <th width="626" scope="row">nombre  : &nbsp;</th>
+      <td width="274" nowrap="nowrap" id="table1" style=""><input name="u" type="text" required="required"  ></td>
+    </tr>
+    <tr>
+		 <th scope="row">contraseña:&nbsp;</th>
+      <td id="table1"><input name="pp" type="password" required="required" ></td>
+     
+    </tr>
+    <tr>
+      <th scope="row" colspan="2">
+        <input  type="submit"  value="iniciar sesion" name="be" >
+      </th>
+      
+    </tr>
+  </tbody>
+</table>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+		</form>
+ 
+	
+	 
+
+ 
+ <br><br>
+
+		
+		<a name="registrate"><p>¿aún no te has registrado? hazlo y asi en tu próximo pedido no tendras que rellenar nuevamente tus datos</p>
+		</a>
+		<input onclick="ActivarCampoOtroTema();" type="button" value="registrarse"name="tema[]" style="margin:0px auto; display:block;"/>
+<div id="OtroTema" style="display:none;" >
+		<br>
+		
+	<form action="loginregistro.php"  method="post"
+ enctype="multipart/form-data" id="lg">
+ 
+ 
+	
+		<table width="200" border="2"  id="t1">
+  <tbody>
+    <tr>
+      <th scope="row">nombre  :&nbsp;</th>
+      <td id="table1"><input name="u" type="text" required="required">&nbsp;</td>
+    </tr>
+	  <tr>
+      <th scope="row">contraseña:&nbsp;</th>
+      <td id="table1" > <input type="password" required="required" name="pp">&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">apellido  :&nbsp;</th>
+      <td id="table1"> <input name="u" type="text" name="ap">&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">direccion :&nbsp;</th>
+      <td  nowrap="nowrap" id="table1" style=""><input type="text" name="di">&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">e-mail: &nbsp;</th>
+      <td nowrap="nowrap" id="table1" ><input type="email" required="required" name="em">&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">móvil: &nbsp;</th>
+      <td nowrap="nowrap" id="table1" ><input type="tel" required="required" name="mo">&nbsp;</td>
+    </tr>
+    
+	  <tr>
+      <th scope="row" colspan="2"><input  type="submit"  style="margin:0px auto; display:block;" value="registrate" name="be"></th>
+      
+    </tr>
+  </tbody>
+</table>
+
+    
+ </form>
+	<br>
+	</div>
+		<!--<input type="text" name="temaotro"></div>-->
+		
+		<!--script que aparece formulario  -->
+		<script type="text/javascript">	function ActivarCampoOtroTema(){		var contenedor = document.getElementById("OtroTema");		contenedor.style.display = "block";		return true;	}</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+										
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
